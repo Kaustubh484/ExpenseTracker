@@ -36,18 +36,18 @@
                     <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
                     <button type='button' onclick='signup()' class='toggle-btn'>Signup</button>
                 </div>
-                <form id='login' class='input-group-login'>
-                    <input type='text' class='input-field' placeholder='Email Id' required>
-                    <input type='password' class='input-field' placeholder='Enter Password' required>
-                    <input type='checkbox' class='check-box'><span>Remember Password</span>
+                <form id='login' action="/login" method="post"  class='input-group-login'>
+                    <input type='text' class='input-field' name="username" placeholder='Email Id' required>
+                    <input type='password' class='input-field' name="password" placeholder='Enter Password' required>
+                    <!-- <input type='checkbox' class='check-box'><span>Remember Password</span> -->
                     <button type='submit' class='submit-btn'>Log in</button>
                 </form>
-                <form id='signup' class='input-group-signup'>
-                    <input type='text' class='input-field' placeholder='First Name' required>
-                    <input type='text' class='input-field' placeholder='Last Name ' required>
-                    <input type='email' class='input-field' placeholder='Email Id' required>
-                    <input type='password' class='input-field' placeholder='Enter Password' required>
-                    <input type='password' class='input-field' placeholder='Confirm Password' required>
+                <form id='signup' action="/register" method="post" class='input-group-signup'>
+                    <input type='text' class='input-field' name="username" placeholder='Name' required>
+                    <!-- <input type='text' class='input-field' placeholder='Last Name ' required> -->
+                    <input type='email' class='input-field' name="email" placeholder='Email Id' required>
+                    <input type='password' class='input-field' name="password" placeholder='Enter Password' required>
+                    <!-- <input type='password' class='input-field' placeholder='Confirm Password' required> -->
                     <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
                     <button type='submit' class='submit-btn'>Signup</button>
                 </form>
